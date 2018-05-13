@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="cl_movie_info_btn_view_seat_map">#EE0000</color>
+    <color name="cl_movie_info_text_view_seat_map">@android:color/white</color>
+
+
+</resources>

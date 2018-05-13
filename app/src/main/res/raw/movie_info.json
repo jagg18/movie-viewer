@@ -1,0 +1,36 @@
+{
+  "movie_id": "465e5cd3-9f14-4161-8900-93bcec6e71b8",
+  "advisory_rating": "PG",
+  "canonical_title": "Ghost In The Shell",
+  "cast": [
+    "Scarlett Johansson",
+    "Michael Wincott",
+    "Michael Pitt"
+  ],
+  "genre": "Action, Crime, Drama ",
+  "has_schedules": 1,
+  "is_inactive": 0,
+  "is_showing": 1,
+  "link_name": "ghost-shell",
+  "poster": "http:\/\/lh3.googleusercontent.com\/hkpMC-4LxMoR07ZAbpKgu_6haxlP8WTvp7t5I8eusOHLAqVeEaGA14Wom9hhikRaQUo0zy1xHQzhQf81Xq-G_BURkak",
+  "poster_landscape": "http:\/\/lh3.googleusercontent.com\/7kEQdTRBBqkSM3MIDmnmf5xi02NpAe-fb1RIxiiaj4hbvQUwVXHGfnFhn_gNL4rPudhTKy84eva7EJwCeaAkoJklpg",
+  "ratings": {
+  },
+  "release_date": "2017-07-29",
+  "runtime_mins": "160.00",
+  "synopsis": "A cyborg policewoman attempts to bring down a nefarious computer hacker.",
+  "trailer": "tRkb1X9ovI4",
+  "average_rating": null,
+  "total_reviews": null,
+  "variants": [
+    "4DX",
+    "3D\/4DX",
+    "ATMOS",
+    "3D"
+  ],
+  "theater": "Glorietta 4",
+  "order": 0,
+  "is_featured": 0,
+  "watch_list": false,
+  "your_rating": 0
+}

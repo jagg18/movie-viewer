@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieViewer</string>
+
+
+    <string name="movie_info_label_name">Name:</string>
+    <string name="movie_info_label_genre">Genre:</string>
+    <string name="movie_info_label_rating">Advisory Rating:</string>
+    <string name="movie_info_label_duration">Duration:</string>
+    <string name="movie_info_label_release_date">Release Date:</string>
+    <string name="movie_info_label_synopsis">Synopsis:</string>
+    <string name="movie_info_label_cast">Cast:</string>
+    <string name="movie_info_btn_view_seat_map">View Seat Map</string>
+</resources>
