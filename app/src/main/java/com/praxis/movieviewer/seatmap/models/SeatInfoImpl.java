@@ -18,7 +18,7 @@ public class SeatInfoImpl implements SeatInfo {
 
   @Override
   public double getPrice() {
-    return 210.0;
+    return price;
   }
 
   @Override

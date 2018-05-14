@@ -10,4 +10,6 @@ public interface SelectedSeatsPresenter {
 
   void selectSeat(SeatInfo seatInfo);
 
+  double getTotalPrice();
+
 }

@@ -19,6 +19,9 @@ public class SeatMapActivity extends AppCompatActivity implements SeatMapView {
   @BindView(R.id.tvTheaterName)
   TextView tvTheaterName;
 
+  @BindView(R.id.tvTotalPrice)
+  TextView tvTotalPrice;
+
   @BindView(R.id.vSelectedSeats)
   SelectedSeatsView selectedSeatsView;
 
@@ -37,14 +40,14 @@ public class SeatMapActivity extends AppCompatActivity implements SeatMapView {
     seatMapPresenter = new SeatMapPresenterImpl(this, movieSeatMapInfo);
   }
 
-  @OnClick(R.id.tvLabelTotal)
+  @OnClick(R.id.tvLabelTotalPrice)
   void addSeat() {
-    seatMapPresenter.selectSeat(new SeatInfoImpl("B4", 210));
+    seatMapPresenter.selectSeat(new SeatInfoImpl("B4", 210.12));
   }
 
   @OnClick(R.id.tvTheaterName)
   void addSeat1() {
-    seatMapPresenter.selectSeat(new SeatInfoImpl("C7", 120));
+    seatMapPresenter.selectSeat(new SeatInfoImpl("C7", 120.44));
   }
 
   @Override
@@ -55,5 +58,10 @@ public class SeatMapActivity extends AppCompatActivity implements SeatMapView {
   @Override
   public SelectedSeatsView getSelectedSeatsView() {
     return selectedSeatsView;
+  }
+
+  @Override
+  public void setTotalPrice(String totalPrice) {
+    tvTotalPrice.setText(totalPrice);
   }
 }

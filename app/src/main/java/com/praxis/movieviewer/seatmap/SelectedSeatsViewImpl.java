@@ -24,8 +24,6 @@ public class SelectedSeatsViewImpl extends LinearLayout implements SelectedSeats
   @BindView(R.id.vSeatList)
   FlexboxLayout vSeatList;
 
-  private SelectedSeatsPresenter selectedSeatsPresenter;
-
   public SelectedSeatsViewImpl(Context context) {
     super(context);
     init();
@@ -50,8 +48,6 @@ public class SelectedSeatsViewImpl extends LinearLayout implements SelectedSeats
   private void init() {
     LayoutInflater.from(getContext()).inflate(R.layout.view_selected_seats, this, true);
     ButterKnife.bind(this);
-
-    selectedSeatsPresenter = new SelectedSeatsPresenterImpl(this);
   }
 
   @Override

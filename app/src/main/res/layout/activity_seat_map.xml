@@ -64,13 +64,15 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/tvLabelTotal"
+            android:id="@+id/tvLabelTotalPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:text="Total"/>
 
         <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

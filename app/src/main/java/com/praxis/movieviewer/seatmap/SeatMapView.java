@@ -8,4 +8,6 @@ public interface SeatMapView {
 
   SelectedSeatsView getSelectedSeatsView();
 
+  void setTotalPrice(String price);
+
 }

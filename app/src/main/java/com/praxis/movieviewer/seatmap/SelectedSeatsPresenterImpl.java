@@ -63,4 +63,13 @@ public class SelectedSeatsPresenterImpl implements SelectedSeatsPresenter {
     }
   }
 
+  @Override
+  public double getTotalPrice() {
+    double price = 0;
+    for(SeatInfo seatInfo : selectedSeatMap.keySet()
+            ) {
+      price += seatInfo.getPrice();
+    }
+    return price;
+  }
 }
