@@ -1,6 +1,10 @@
 package com.praxis.movieviewer.movieinfo.models;
 
-public interface MovieInfo {
+import java.io.Serializable;
+
+public interface MovieInfo extends Serializable {
+
+  String getMovieId();
 
   String getTitle();
 
@@ -19,5 +23,7 @@ public interface MovieInfo {
   String getPosterLandscapeUrl();
 
   String getPosterUrl();
+
+  String getTheater();
 
 }

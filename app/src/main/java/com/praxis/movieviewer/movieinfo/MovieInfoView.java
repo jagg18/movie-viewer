@@ -1,6 +1,7 @@
 package com.praxis.movieviewer.movieinfo;
 
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfo;
 
 public interface MovieInfoView {
 
@@ -10,6 +11,6 @@ public interface MovieInfoView {
 
   void setMovieInfo(MovieInfo movieInfo);
 
-  void openSeatMap();
+  void openSeatMap(MovieSeatMapInfo movieSeatMapInfo);
 
 }

@@ -84,6 +84,11 @@ public class MovieInfoImpl implements MovieInfo {
   }
 
   @Override
+  public String getMovieId() {
+    return movieId;
+  }
+
+  @Override
   public String getTitle() {
     return canonicalTitle;
   }
@@ -154,5 +159,10 @@ public class MovieInfoImpl implements MovieInfo {
   @Override
   public String getPosterUrl() {
     return posterUrl;
+  }
+
+  @Override
+  public String getTheater() {
+    return theater;
   }
 }

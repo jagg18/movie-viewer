@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.praxis.movieviewer.R;
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfo;
 import com.praxis.movieviewer.seatmap.SeatMapActivity;
 
 import butterknife.BindView;
@@ -100,9 +101,14 @@ public class MovieInfoActivity extends AppCompatActivity implements MovieInfoVie
   }
 
   @OnClick(R.id.btnViewSeatMap)
+  void viewSeatMap() {
+    movieInfoPresenter.onViewSeatMap();
+  }
+
   @Override
-  public void openSeatMap() {
+  public void openSeatMap(MovieSeatMapInfo movieSeatMapInfo) {
     Intent seatMapIntent = new Intent(this, SeatMapActivity.class);
+    seatMapIntent.putExtra(SeatMapActivity.EXTRA_MOVIE_SEAT_MAP_INFO, movieSeatMapInfo);
     startActivity(seatMapIntent);
   }
 }

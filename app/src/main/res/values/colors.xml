@@ -4,9 +4,16 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="colorRed">#EE0000</color>
 
-    <color name="cl_movie_info_btn_view_seat_map">#EE0000</color>
+    <!--Movie Info-->
+    <color name="cl_movie_info_btn_view_seat_map">@color/colorRed</color>
     <color name="cl_movie_info_text_view_seat_map">@android:color/white</color>
+
+    <!--Seat Map-->
+    <color name="cl_seat_map_bg_total">@android:color/white</color>
+    <color name="cl_seat_map_bg_seat_selected">@color/colorRed</color>
+    <color name="cl_seat_map_text_seat_selected">@android:color/white</color>
 
 
 </resources>
