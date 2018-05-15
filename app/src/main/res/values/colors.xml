@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorRed">#EE0000</color>
+    <color name="colorBlue">#3958BA</color>
+    <color name="colorGrey">#B8BCCB</color>
 
     <!--Movie Info-->
     <color name="cl_movie_info_btn_view_seat_map">@color/colorRed</color>
@@ -14,6 +16,12 @@
     <color name="cl_seat_map_bg_total">@android:color/white</color>
     <color name="cl_seat_map_bg_seat_selected">@color/colorRed</color>
     <color name="cl_seat_map_text_seat_selected">@android:color/white</color>
+    <color name="cl_seat_map_bg_schedule_selector">@color/colorBlue</color>
+    <color name="cl_seat_map_text_schedule_selector">@android:color/black</color>
 
+    <color name="cl_seat_bg_selected">@color/colorRed</color>
+    <color name="cl_seat_bg_reserved">@color/colorBlue</color>
+    <color name="cl_seat_bg_available">@color/colorGrey</color>
+    <color name="cl_seat_bg_none">@android:color/transparent</color>
 
 </resources>

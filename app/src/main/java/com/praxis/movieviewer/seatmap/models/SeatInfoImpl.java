@@ -23,6 +23,7 @@ public class SeatInfoImpl implements SeatInfo {
 
   @Override
   public boolean equals(Object obj) {
+//    return false;
     if(obj == this) {
       return true;
     }

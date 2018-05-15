@@ -1,7 +1,9 @@
 package com.praxis.movieviewer.movieinfo;
 
+import android.content.Context;
+
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
-import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfo;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfo;
 
 public interface MovieInfoView {
 
@@ -11,6 +13,8 @@ public interface MovieInfoView {
 
   void setMovieInfo(MovieInfo movieInfo);
 
-  void openSeatMap(MovieSeatMapInfo movieSeatMapInfo);
+  void openSeatMap(MovieSeatSelectionInfo movieSeatSelectionInfo);
+
+  Context getContext();
 
 }

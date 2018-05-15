@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".seatmap.SeatMapActivity">
+    tools:context=".seatmap.SeatSelectionActivity">
 
     <LinearLayout
         android:id="@+id/llTheaterInfo"
@@ -23,34 +23,76 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            tools:text="Theater Name"/>
+            tools:text="Theater Name\n Next Line"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llScheduleSelector"
         android:layout_width="match_parent"
+        android:background="@color/cl_seat_map_bg_schedule_selector"
         android:layout_height="wrap_content"
         android:layout_below="@id/llTheaterInfo"
-        android:background="@color/colorPrimaryDark">
+        android:padding="10dp"
+        android:weightSum="3">
 
-        <android.support.v7.widget.AppCompatSpinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/vSelectorDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"/>
 
-        </android.support.v7.widget.AppCompatSpinner>
+        <Spinner
+            android:id="@+id/vSelectorCinema"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"/>
 
-        <android.support.v7.widget.AppCompatSpinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/vSelectorTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"/>
 
-        </android.support.v7.widget.AppCompatSpinner>
+    </LinearLayout>
 
-        <android.support.v7.widget.AppCompatSpinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llLegend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:layout_below="@id/llScheduleSelector"
+        android:padding="10dp"
+        android:weightSum="3">
 
-        </android.support.v7.widget.AppCompatSpinner>
+        <com.praxis.movieviewer.seatmap.SeatViewImpl
+            android:id="@+id/vSeatLegendAvailable"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="Available"
+            android:layout_height="wrap_content"/>
+
+        <com.praxis.movieviewer.seatmap.SeatViewImpl
+            android:id="@+id/vSeatLegendReserved"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="Reserved"
+            android:layout_height="wrap_content"/>
+
+        <com.praxis.movieviewer.seatmap.SeatViewImpl
+            android:id="@+id/vSeatLegendSelected"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="Selected"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
@@ -99,6 +141,7 @@
         <!--custom view for selected seats-->
         <com.praxis.movieviewer.seatmap.SelectedSeatsViewImpl
             android:id="@+id/vSelectedSeats"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

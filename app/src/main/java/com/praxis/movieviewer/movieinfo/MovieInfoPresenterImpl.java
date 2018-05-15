@@ -1,8 +1,8 @@
 package com.praxis.movieviewer.movieinfo;
 
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
-import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfo;
-import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfoImpl;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfo;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfoImpl;
 
 public class MovieInfoPresenterImpl implements MovieInfoPresenter, GetMovieInfoInteractor.OnFinishedListener {
 
@@ -16,6 +16,7 @@ public class MovieInfoPresenterImpl implements MovieInfoPresenter, GetMovieInfoI
 
     // init interactor
     this.getMovieInfoInteractor = new GetMovieInfoInteractorProdImpl();
+//    this.getMovieInfoInteractor = new GetMovieInfoInteractorLocalImpl(movieInfoView.getContext());
   }
 
   @Override
@@ -34,8 +35,8 @@ public class MovieInfoPresenterImpl implements MovieInfoPresenter, GetMovieInfoI
 
   @Override
   public void onViewSeatMap() {
-    MovieSeatMapInfo movieSeatMapInfo = new MovieSeatMapInfoImpl(movieInfo.getMovieId(), movieInfo.getTheater());
-    movieInfoView.openSeatMap(movieSeatMapInfo);
+    MovieSeatSelectionInfo movieSeatSelectionInfo = new MovieSeatSelectionInfoImpl(movieInfo.getMovieId(), movieInfo.getTheater());
+    movieInfoView.openSeatMap(movieSeatSelectionInfo);
   }
 
   @Override

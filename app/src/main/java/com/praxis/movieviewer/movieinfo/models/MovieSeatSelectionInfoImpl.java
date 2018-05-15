@@ -1,12 +1,12 @@
 package com.praxis.movieviewer.movieinfo.models;
 
-public class MovieSeatMapInfoImpl implements MovieSeatMapInfo {
+public class MovieSeatSelectionInfoImpl implements MovieSeatSelectionInfo {
 
   private String movieId;
 
   private String theater;
 
-  public MovieSeatMapInfoImpl(String movieId, String theater) {
+  public MovieSeatSelectionInfoImpl(String movieId, String theater) {
     this.movieId = movieId;
     this.theater = theater;
   }

@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".seatmap.SeatMapActivity"
+            android:name=".seatmap.SeatSelectionActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait">
         </activity>

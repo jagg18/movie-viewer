@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true">
+        <color android:color="@color/cl_seat_bg_selected"/>
+    </item>
+    <item android:state_enabled="true" android:state_selected="false">
+        <color android:color="@color/cl_seat_bg_available"/>
+    </item>
+    <item android:state_enabled="false" android:state_selected="true">
+        <color android:color="@color/cl_seat_bg_reserved"/>
+    </item>
+    <item android:state_enabled="false" android:state_selected="false">
+        <color android:color="@color/cl_seat_bg_none"/>
+    </item>
+</selector>

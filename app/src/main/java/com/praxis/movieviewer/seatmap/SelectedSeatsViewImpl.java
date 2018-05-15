@@ -52,7 +52,15 @@ public class SelectedSeatsViewImpl extends LinearLayout implements SelectedSeats
 
   @Override
   public void addSeat(SelectedSeatView seatView) {
-    vSeatList.addView((View) seatView);
+    View view = (View) seatView;
+    // add wrap layout parameters
+    if(willWrapList()) {
+      FlexboxLayout.LayoutParams lp = new FlexboxLayout.LayoutParams(FlexboxLayout.LayoutParams.WRAP_CONTENT, FlexboxLayout.LayoutParams.WRAP_CONTENT);
+      lp.setWrapBefore(true);
+      view.setLayoutParams(lp);
+    }
+
+    vSeatList.addView(view);
   }
 
   @Override
@@ -68,5 +76,10 @@ public class SelectedSeatsViewImpl extends LinearLayout implements SelectedSeats
   @Override
   public void showMaxSeatsError() {
     Toast.makeText(getContext(), "You can only select up to 10 seats.", Toast.LENGTH_LONG).show();
+  }
+
+  private boolean willWrapList() {
+    int count = vSeatList.getChildCount();
+    return count % NO_SEATS_PER_ROW == 0;
   }
 }

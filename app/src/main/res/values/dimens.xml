@@ -3,4 +3,6 @@
 
     <dimen name="dm_padding_item">5dp</dimen>
 
+    <dimen name="dropdownListPreferredItemHeight">48dp</dimen>
+
 </resources>

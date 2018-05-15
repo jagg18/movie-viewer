@@ -1,0 +1,153 @@
+{
+  "dates": [
+    {
+      "id": "20170405",
+      "label": "Apr 05, Wed",
+      "date": "2017-04-05"
+    },
+    {
+      "id": "20170406",
+      "label": "Apr 06, Thu",
+      "date": "2017-04-06"
+    }
+  ],
+  "cinemas": [
+    {
+      "parent": "20170405",
+      "cinemas": [
+        {
+          "id": "20170405-3",
+          "cinema_id": "3",
+          "label": "Cinema 3"
+        },
+        {
+          "id": "20170406-4",
+          "cinema_id": "4",
+          "label": "Cinema 4"
+        },
+        {
+          "id": "20170406-5",
+          "cinema_id": "5",
+          "label": "Cinema 5"
+        },
+        {
+          "id": "20170406-6",
+          "cinema_id": "6",
+          "label": "Cinema 6"
+        }
+      ]
+    }
+  ],
+  "times": [
+    {
+      "parent": "20170405-3",
+      "times": [
+        {
+          "id": "12:15",
+          "label": "12:15 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "280",
+          "variant": null
+        },
+        {
+          "id": "14:45",
+          "label": "02:45 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "250",
+          "variant": null
+        },
+        {
+          "id": "17:15",
+          "label": "05:15 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "230",
+          "variant": null
+        },
+        {
+          "id": "20:00",
+          "label": "08:00 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "200",
+          "variant": null
+        },
+        {
+          "id": "22:15",
+          "label": "10:15 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "180",
+          "variant": null
+        },
+        {
+          "id": "20:15",
+          "label": "8:15 PM",
+          "schedule_id": "4::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "195",
+          "variant": null
+        },
+        {
+          "id": "21:15",
+          "label": "9:15 PM",
+          "schedule_id": "4::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "201",
+          "variant": null
+        },
+        {
+          "id": "20:15",
+          "label": "8:15 PM",
+          "schedule_id": "5::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "206",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "parent": "20170406-4",
+      "times": [
+        {
+          "id": "12:15",
+          "label": "12:15 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "280",
+          "variant": null
+        },
+        {
+          "id": "18:45",
+          "label": "06:45 PM",
+          "schedule_id": "3::20170405,Rl5c058UQWGJAJO87G5xuA,None",
+          "popcorn_price": "0",
+          "popcorn_label": "Popcorn Bucket",
+          "seating_type": "Reserved Seating",
+          "price": "999",
+          "variant": null
+        }
+      ]
+    }
+  ]
+}

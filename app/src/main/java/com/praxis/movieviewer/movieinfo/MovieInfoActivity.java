@@ -1,5 +1,6 @@
 package com.praxis.movieviewer.movieinfo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +10,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.praxis.movieviewer.R;
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
-import com.praxis.movieviewer.movieinfo.models.MovieSeatMapInfo;
-import com.praxis.movieviewer.seatmap.SeatMapActivity;
+import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfo;
+import com.praxis.movieviewer.seatmap.SeatSelectionActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -60,14 +61,12 @@ public class MovieInfoActivity extends AppCompatActivity implements MovieInfoVie
   @Override
   protected void onResume() {
     super.onResume();
-
     movieInfoPresenter.onResume();
   }
 
   @Override
   protected void onDestroy() {
     movieInfoPresenter.onDestroy();
-
     super.onDestroy();
   }
 
@@ -106,9 +105,14 @@ public class MovieInfoActivity extends AppCompatActivity implements MovieInfoVie
   }
 
   @Override
-  public void openSeatMap(MovieSeatMapInfo movieSeatMapInfo) {
-    Intent seatMapIntent = new Intent(this, SeatMapActivity.class);
-    seatMapIntent.putExtra(SeatMapActivity.EXTRA_MOVIE_SEAT_MAP_INFO, movieSeatMapInfo);
+  public void openSeatMap(MovieSeatSelectionInfo movieSeatSelectionInfo) {
+    Intent seatMapIntent = new Intent(this, SeatSelectionActivity.class);
+    seatMapIntent.putExtra(SeatSelectionActivity.EXTRA_MOVIE_SEAT_MAP_INFO, movieSeatSelectionInfo);
     startActivity(seatMapIntent);
+  }
+
+  @Override
+  public Context getContext() {
+    return this;
   }
 }
