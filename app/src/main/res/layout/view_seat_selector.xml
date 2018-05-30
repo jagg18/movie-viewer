@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llLegend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llScheduleSelector"
+        android:gravity="center"
+        android:padding="0dp"
+        android:weightSum="3">
+
+        <com.praxis.movieviewer.seatselector.seatmap.SeatCustomView
+            android:id="@+id/vSeatLegendAvailable"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"/>
+
+        <com.praxis.movieviewer.seatselector.seatmap.SeatCustomView
+            android:id="@+id/vSeatLegendReserved"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserved"/>
+
+        <com.praxis.movieviewer.seatselector.seatmap.SeatCustomView
+            android:id="@+id/vSeatLegendSelected"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSelectedSeats"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_above="@id/llTotal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Your selected seats:"/>
+
+        <!--custom view for selected seats-->
+        <com.praxis.movieviewer.seatselector.selectedseats.SelectedSeatsCustomView
+            android:id="@+id/vSelectedSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llSelectedSeats"
+        android:layout_below="@id/llLegend">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tvScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_screen"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Movie Screen"/>
+
+            <LinearLayout
+                android:id="@+id/vSeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvScreen"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

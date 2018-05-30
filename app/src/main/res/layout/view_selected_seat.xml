@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/tvSeatName"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="@color/cl_seat_map_bg_seat_selected"
         android:gravity="center"

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seatselector.SeatSelectionActivity">
+
+    <LinearLayout
+        android:id="@+id/llTheaterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theater:"/>
+
+        <TextView
+            android:id="@+id/tvTheaterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            tools:text="Theater Name\n Next Line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llScheduleSelector"
+        android:layout_width="match_parent"
+        android:background="@color/cl_seat_map_bg_schedule_selector"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTheaterInfo"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/vSelectorDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"/>
+
+        <Spinner
+            android:id="@+id/vSelectorCinema"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"/>
+
+        <Spinner
+            android:id="@+id/vSelectorTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_seat_map_bg_total"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvLabelTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Total"/>
+
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            tools:text="PhP 000.00"/>
+
+    </LinearLayout>
+
+    <com.praxis.movieviewer.seatselector.seatmap.SeatSelectorView
+        android:id="@+id/vSeatSelectorView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/llTotal"
+        android:layout_below="@id/llScheduleSelector"/>
+
+
+
+</RelativeLayout>

@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide;
 import com.praxis.movieviewer.R;
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
 import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfo;
-import com.praxis.movieviewer.seatmap.SeatSelectionActivity;
+import com.praxis.movieviewer.seatselector.SeatSelectionActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

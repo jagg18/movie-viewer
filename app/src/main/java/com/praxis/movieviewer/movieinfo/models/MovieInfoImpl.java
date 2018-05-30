@@ -3,6 +3,7 @@ package com.praxis.movieviewer.movieinfo.models;
 import android.text.TextUtils;
 
 import com.google.gson.annotations.SerializedName;
+import com.praxis.movieviewer.movieinfo.models.MovieInfo;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="1dp"
     tools:layout_height="20dp"
     tools:layout_width="20dp">
 
     <View
+        android:id="@+id/vSeat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/selector_bg_seat"

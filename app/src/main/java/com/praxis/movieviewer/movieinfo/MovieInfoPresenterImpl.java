@@ -1,5 +1,7 @@
 package com.praxis.movieviewer.movieinfo;
 
+import com.praxis.movieviewer.movieinfo.data.GetMovieInfoInteractor;
+import com.praxis.movieviewer.movieinfo.data.GetMovieInfoInteractorProdImpl;
 import com.praxis.movieviewer.movieinfo.models.MovieInfo;
 import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfo;
 import com.praxis.movieviewer.movieinfo.models.MovieSeatSelectionInfoImpl;
